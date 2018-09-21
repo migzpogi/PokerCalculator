@@ -1,1 +1,7 @@
 2018-09-21 11:35:18,308 - MainThread - __main__ - INFO - hello world!
+2018-09-21 14:44:07,086 - MainThread - __main__ - DEBUG - Calculating Deuces of ['a', 'b', 'c'] and ['1', '2']
+2018-09-21 14:45:52,389 - MainThread - __main__ - DEBUG - Calculating Deuces of ['a', 'b', 'c'] and ['1', '2']
+2018-09-21 14:46:18,874 - MainThread - __main__ - DEBUG - Calculating Deuces of ['a', 'b', 'c'] and ['1']
+2018-09-21 14:46:18,875 - MainThread - lib.input_checker - DEBUG - ['1'] not a valid Hand
+2018-09-21 14:46:38,887 - MainThread - __main__ - DEBUG - Calculating Deuces of ['a', 'b', 'c'] and ['1']
+2018-09-21 14:46:38,887 - MainThread - lib.input_checker - ERROR - ['1'] not a valid Hand
