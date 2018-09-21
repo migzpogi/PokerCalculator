@@ -1,7 +1,7 @@
 # Poker Calculator
 
 ## Introduction
-This project was inspired when we joined an AI Poker tournament. There are a lot of libraries out there that helps you calculate the strength of your hand and one of the more famous ones is Deuces. You can find its project page here:[worldveil/deuces](https://github.com/worldveil/deuces) 
+This project was inspired when we joined an AI Poker tournament. There are a lot of libraries out there that helps you calculate the strength of your hand and one of the more famous ones is Deuces. You can find its project page here: [worldveil/deuces](https://github.com/worldveil/deuces) 
 
 Deuces gives you a numerical score based on your hole cards and the community cards. A Royal Flush is scored as **"1"** and an unsuited 7-5-4-3-2 as **"7462"**.  
 
@@ -19,5 +19,8 @@ Sometimes knowing your Deuces score is not enough, so we will be fighting an "im
   * That is your winning percentage. 
   
 Now you have a Deuces score and a winning percentage. Making a move will be much easier.
+
+## Requirements
+  * Python 3.x
 
 
