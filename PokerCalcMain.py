@@ -3,7 +3,7 @@ import logging.config
 
 from deuces.Card import Card
 from deuces.Evaluator import Evaluator
-from lib.input_checker import input_checker
+from lib.checkers import input_type_checker
 
 log = logging.getLogger(__name__)
 
@@ -18,7 +18,7 @@ def calculate_deuces(board_arg, hand_arg):
 
     log.debug('Calculating Deuces of {} and {}'.format(board_arg, hand_arg))
 
-    if input_checker(board_arg, hand_arg):
+    if input_type_checker(board_arg, hand_arg):
 
         print('hello')
         # # convert string to Card object
