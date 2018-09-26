@@ -15,3 +15,21 @@
 2018-09-26 10:46:37,035 - MainThread - __main__ - ERROR - Please see documentation for list of valid input.
 2018-09-26 10:46:59,941 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
 2018-09-26 10:52:04,564 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 10:58:56,958 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:02:00,580 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:02:57,964 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:03:05,795 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:03:20,023 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '2s']
+2018-09-26 11:03:43,290 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '4h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:05:59,089 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:06:10,798 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:06:30,812 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:06:37,184 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:06:57,462 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:07:21,278 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:09:32,732 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:09:42,008 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:10:12,587 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:10:19,867 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:12:10,838 - MainThread - __main__ - ERROR - Please supply board cards and hand cards.
+2018-09-26 11:12:53,269 - MainThread - __main__ - ERROR - Please supply board cards and hand cards.
