@@ -15,7 +15,10 @@ def input_type_checker(board_arg, hand_arg):
     if isinstance(board_arg, list) and len(board_arg) > 2:
         if isinstance(hand_arg, list) and len(hand_arg) == 2:
             if card_checker(board_arg) and card_checker(hand_arg):
-                return True
+                if is_list_unique(board_arg + hand_arg):
+                    is_valid = True
+                else:
+                    log.error('No duplicate cards allowed.')
             else:
                 log.error('Card types must be of "Ad" format.')
         else:
@@ -61,3 +64,19 @@ def convert_case(list_of_cards):
         list_of_cards[idx] = card[0].upper() + card[1].lower()
 
     return list_of_cards
+
+
+def is_list_unique(list_of_cards):
+    """
+    Checks if list members are unique
+    :param list_of_cards:
+    :return:
+    """
+
+    salonga = False
+
+    buffer = list(set(list_of_cards))
+    if len(buffer) == len(list_of_cards):
+        salonga = True
+
+    return salonga

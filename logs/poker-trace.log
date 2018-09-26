@@ -33,3 +33,17 @@
 2018-09-26 11:10:19,867 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
 2018-09-26 11:12:10,838 - MainThread - __main__ - ERROR - Please supply board cards and hand cards.
 2018-09-26 11:12:53,269 - MainThread - __main__ - ERROR - Please supply board cards and hand cards.
+2018-09-26 11:17:14,082 - MainThread - __main__ - ERROR - Please supply board cards and hand cards.
+2018-09-26 11:17:22,169 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 11:23:46,716 - MainThread - __main__ - ERROR - Please check that there are no duplicate entries.
+2018-09-26 11:24:02,756 - MainThread - __main__ - ERROR - Please supply board cards and hand cards.
+2018-09-26 11:29:21,649 - MainThread - __main__ - DEBUG - Calculating Deuces of ['As', 'as', 'Ad'] and ['3d', '4d']
+2018-09-26 11:29:21,651 - MainThread - lib.checkers - ERROR - No duplicate cards allowed.
+2018-09-26 11:29:21,652 - MainThread - __main__ - ERROR - Please see documentation for list of valid input.
+2018-09-26 11:29:54,098 - MainThread - __main__ - DEBUG - Calculating Deuces of ['As', 'as', 'Ad'] and ['3d', '4d']
+2018-09-26 11:29:54,098 - MainThread - lib.checkers - ERROR - No duplicate cards allowed.
+2018-09-26 11:29:54,098 - MainThread - __main__ - ERROR - Please see documentation for list of valid input.
+2018-09-26 11:30:10,251 - MainThread - __main__ - DEBUG - Calculating Deuces of ['As', 'as', 'aC'] and ['3d', '4d']
+2018-09-26 11:30:10,252 - MainThread - lib.checkers - ERROR - No duplicate cards allowed.
+2018-09-26 11:30:10,252 - MainThread - __main__ - ERROR - Please see documentation for list of valid input.
+2018-09-26 11:30:22,509 - MainThread - __main__ - DEBUG - Calculating Deuces of ['As', 'AD', 'aC'] and ['3d', '4d']

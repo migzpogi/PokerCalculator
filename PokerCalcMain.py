@@ -54,6 +54,7 @@ def calculate_deuces(board_arg, hand_arg):
 
     else:
         log.error('Please see documentation for list of valid input.')
+        sys.exit(1)
 
 
 if __name__ == '__main__':
@@ -73,13 +74,8 @@ if __name__ == '__main__':
 
     else:
 
-
-
-        print(user_input_cards.board)
-        print(user_input_cards.hand)
-
-        board = ['4h', '5h', '8h', '7h', '9c']
-        hand = ['2s', '3s']
+        board = user_input_cards.board
+        hand = user_input_cards.hand
 
         print(calculate_deuces(board, hand))
 
