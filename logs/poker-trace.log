@@ -7,3 +7,11 @@
 2018-09-21 14:46:38,887 - MainThread - lib.input_checker - ERROR - ['1'] not a valid Hand
 2018-09-24 10:59:11,655 - MainThread - __main__ - DEBUG - Calculating Deuces of ['a', 'b', 'c'] and ['1']
 2018-09-24 10:59:11,656 - MainThread - lib.checkers - ERROR - ['1'] not a valid Hand
+2018-09-26 10:46:03,308 - MainThread - __main__ - DEBUG - Calculating Deuces of ['a', 'b', 'c'] and ['1']
+2018-09-26 10:46:03,309 - MainThread - lib.checkers - ERROR - ['1'] must be a list of len == 2.
+2018-09-26 10:46:03,309 - MainThread - __main__ - ERROR - Please see documentation for list of valid input.
+2018-09-26 10:46:37,035 - MainThread - __main__ - DEBUG - Calculating Deuces of ['a', 'b', 'c'] and ['1']
+2018-09-26 10:46:37,035 - MainThread - lib.checkers - ERROR - Hand ['1'] must be a list of len == 2.
+2018-09-26 10:46:37,035 - MainThread - __main__ - ERROR - Please see documentation for list of valid input.
+2018-09-26 10:46:59,941 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']
+2018-09-26 10:52:04,564 - MainThread - __main__ - DEBUG - Calculating Deuces of ['4h', '5h', '8h', '7h', '9c'] and ['2s', '3s']

@@ -14,12 +14,15 @@ def input_type_checker(board_arg, hand_arg):
 
     if isinstance(board_arg, list) and len(board_arg) > 2:
         if isinstance(hand_arg, list) and len(hand_arg) == 2:
-            is_valid = True
+            if card_checker(board_arg) and card_checker(hand_arg):
+                return True
+            else:
+                log.error('Card types must be of "Ad" format.')
         else:
-            log.error('{} must be a list of len == 2'.format(hand_arg))
+            log.error('Hand {} must be a list of len == 2.'.format(hand_arg))
 
     else:
-        log.error('{} must be a list of len > 2'.format(board_arg))
+        log.error('Board {} must be a list of len > 2.'.format(board_arg))
 
     return is_valid
 

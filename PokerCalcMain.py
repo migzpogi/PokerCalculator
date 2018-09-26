@@ -19,23 +19,18 @@ def calculate_deuces(board_arg, hand_arg):
     log.debug('Calculating Deuces of {} and {}'.format(board_arg, hand_arg))
 
     if input_type_checker(board_arg, hand_arg):
+        # convert string to Card object
+        board = list(map(lambda c: Card.new(c), board_arg))
+        hand = list(map(lambda c: Card.new(c), hand_arg))
 
-        print('hello')
-        # # convert string to Card object
-        # board = list(map(lambda c: Card.new(c), board_arg))
-        # hand = list(map(lambda c: Card.new(c), hand_arg))
-        #
-        # evaluator = Evaluator()
-        # deuces_score = evaluator.evaluate(board, hand)
-        # deuces_class = evaluator.class_to_string(evaluator.get_rank_class(deuces_score))
-        #
-        # return (deuces_score, deuces_class)
+        evaluator = Evaluator()
+        deuces_score = evaluator.evaluate(board, hand)
+        deuces_class = evaluator.class_to_string(evaluator.get_rank_class(deuces_score))
+
+        return (deuces_score, deuces_class)
 
     else:
-        raise TypeError('Please see documentation for list of valid input.')
-
-
-
+        log.error('Please see documentation for list of valid input.')
 
 
 if __name__ == '__main__':
@@ -47,9 +42,8 @@ if __name__ == '__main__':
                               fname='./logs/logging_config.ini',
                               defaults={'logfilename': config.get('logs', 'path')})
 
-    # board = ['4h', '5h', '8h', '7h', '9c']
-    # hand = ['2s', '3s']
-    #
-    # print(calculate_deuces(board, hand))
+    board = ['4h', '5h', '8h', '7h', '9c']
+    hand = ['2s', '3s']
 
-    calculate_deuces(['a','b','c'],['1'])
+    print(calculate_deuces(board, hand))
+
