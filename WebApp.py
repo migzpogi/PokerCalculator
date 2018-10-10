@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from PokerCalcMain import calculate_deuces
+from PokerCalcMain import calculate_deuces, compute_win_percentage
 
 app = Flask(__name__)
 
@@ -15,7 +15,13 @@ def hello():
     d_score = d[0]
     d_class = d[1]
 
-    return jsonify({'score': d_score}, {'class': d_class})
+    win = compute_win_percentage(b, h)
+
+    return jsonify(
+        {'score': d_score},
+        {'class': d_class},
+        {'win_percent': win}
+    )
 
 
 def split_board(board_args):
@@ -69,5 +75,5 @@ def split_hand(hand_args):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
-    # app.run()
+    # app.run(host='0.0.0.0', port=8080)
+    app.run()
