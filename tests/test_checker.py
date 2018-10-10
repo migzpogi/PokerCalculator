@@ -1,5 +1,5 @@
 import unittest
-from lib.checkers import input_type_checker, card_checker, convert_case
+from lib.checkers import input_type_checker, card_checker, convert_case, is_list_unique
 
 class TestCheckers(unittest.TestCase):
     """
@@ -72,6 +72,21 @@ class TestCheckers(unittest.TestCase):
 
         self.assertFalse(card_checker(list_of_cards))
 
+    def test_is_list_unique(self):
+        """
+        Checks if the list is unique
+        :return:
+        """
+
+        list_1 = [1,2,3,4,5]
+        list_2 = [1,2,2,3,3,4,5]
+        list_3 = ['Ac', 'Ah', 'Ad', 'As']
+        list_4 = ['Ac', 'Ac', 'Ah']
+
+        self.assertTrue(is_list_unique(list_1))
+        self.assertTrue(is_list_unique(list_3))
+        self.assertFalse(is_list_unique(list_2))
+        self.assertFalse(is_list_unique(list_4))
 
 
 if __name__ == '__main__':
