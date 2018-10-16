@@ -1,7 +1,10 @@
 # Poker Calculator
 
 ## Introduction
-This project was inspired when we joined an AI Poker tournament. There are a lot of libraries out there that helps you calculate the strength of your hand and one of the more famous ones is Deuces. You can find its project page here: [worldveil/deuces](https://github.com/worldveil/deuces) 
+Poker Calculator computes the strength of your hand in a Texas Hold'em Poker game.
+
+## Background
+This project was inspired when we joined an AI Poker tournament. There are a lot of libraries out there that helps you calculate the strength of your hand, and one of the more famous ones is Deuces. You can find its project page here: [worldveil/deuces](https://github.com/worldveil/deuces)
 
 Deuces gives you a numerical score based on your hole cards and the community cards. A Royal Flush is scored as **"1"** and an unsuited 7-5-4-3-2 as **"7462"**.  
 
@@ -24,3 +27,33 @@ Now you have a Deuces score and a winning percentage. Making a move will be much
   * Python 3.x
 
 
+## Running the Application
+
+Poker Calculator can be ran in two ways:
+1. Console application
+2. Web API
+
+### Console Application
+Running the console application will display your winning percentage in the terminal.
+```
+python PokerCalculatorMain.py --board As Tc 3d --hand Ah Ad
+(1646, 'Three of a Kind')
+0.964
+```
+  * Three board cards are required to run.
+  * Two hand cards are required to run.
+  * Card format is `Rs` where `R` is the rank (A for ace, 2 to 9, T for 10, JQK for Jack, Queen, and King respectively) and 's' is the suit (d for diamonds, h for hearts, c for clubs and s for spades)
+  * `1646` is the Deuces score. The lower the number, the better.
+  * `0.964` is the winning percentage.
+
+### Web API
+Running the Web API will make Poker Calculator available via web calls.
+```
+python WebApp.py
+```
+  * Default settings will run the Web API at 0.0.0.0:8080
+  * Address is: `poker?board={}&hand={}`
+  * Three board cards are required to run.
+  * Two hand cards are required to run.
+  * Card format is `Rs` where `R` is the rank (A for ace, 2 to 9, T for 10, JQK for Jack, Queen, and King respectively) and 's' is the suit (d for diamonds, h for hearts, c for clubs and s for spades)
+  * Sample API call: `http://127.0.0.1:8080/poker?board=AsAdAcQsKd&hand=Kh2d`
