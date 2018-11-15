@@ -1,4 +1,5 @@
-# Poker Calculator
+# Poker Calculator  ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+
 
 ## Introduction
 Poker Calculator computes the strength of your hand in a Texas Hold'em Poker game.
@@ -13,14 +14,14 @@ What this Poker Calculator aims to do is to get your Deuces score and run a Mont
   * The board is Ace of Hearts, King of Diamonds, and Jack of Clubs
   * Your Deuces score is: 1600
   * What do you do? Call? Raise? Fold?
-  
+
 Sometimes knowing your Deuces score is not enough, so we will be fighting an "imaginary opponent".
   * We will be drawing cards from the deck that are still available. 
   * We will compute its Deuces score.
   * We will compare the score and if you have the lower one, you get a point. If not, you receive nothing.
   * Repeat as many times as you want. You count your points and divide it to the number of games you had. 
   * That is your winning percentage. 
-  
+
 Now you have a Deuces score and a winning percentage. Making a move will be much easier.
 
 ## Requirements
