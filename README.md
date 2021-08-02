@@ -1,5 +1,6 @@
-# Poker Calculator  ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
-
+# Poker Calculator  
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) 
+![GitHub](https://img.shields.io/badge/python-3.x-blue) 
 
 ## Introduction
 Poker Calculator computes the strength of your hand in a Texas Hold'em Poker game.
@@ -26,7 +27,6 @@ Now you have a Deuces score and a winning percentage. Making a move will be much
 
 ## Requirements
   * Python 3.x
-
 
 ## Running the Application
 
