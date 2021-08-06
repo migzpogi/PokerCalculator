@@ -30,9 +30,9 @@ Now you have a Deuces score and a winning percentage. Making a move will be much
 
 ## Running the Application
 
-Poker Calculator can be ran in two ways:
-1. Console application
-2. Web API
+### Installing the requirements
+  * Creating a virtualenvironment is always a good idea.
+  * Run `pip install -r requirements. txt`
 
 ### Console Application
 Running the console application will display your winning percentage in the terminal.
@@ -58,3 +58,6 @@ python WebApp.py
   * Two hand cards are required to run.
   * Card format is `Rs` where `R` is the rank (A for ace, 2 to 9, T for 10, JQK for Jack, Queen, and King respectively) and 's' is the suit (d for diamonds, h for hearts, c for clubs and s for spades)
   * Sample API call: `http://127.0.0.1:8080/poker?board=AsAdAcQsKd&hand=Kh2d`
+  
+## Unit Tests
+  * `nosetests` will run unit tests.
