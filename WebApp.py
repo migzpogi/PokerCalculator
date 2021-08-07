@@ -3,7 +3,11 @@ from PokerCalcMain import calculate_deuces, compute_win_percentage
 
 app = Flask(__name__)
 
-@app.route("/poker")
+@app.route("/")
+def landing():
+    return "Hello World"
+
+@app.route("/api/v1/poker")
 def hello():
     board = request.args.get('board')
     hand = request.args.get('hand')
@@ -17,10 +21,14 @@ def hello():
 
     win = compute_win_percentage(b, h)
 
+    response = {
+        'score': d_score,
+        'class': d_class,
+        'win_percent': win
+    }
+
     return jsonify(
-        {'score': d_score},
-        {'class': d_class},
-        {'win_percent': win}
+        response
     )
 
 
