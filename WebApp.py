@@ -1,7 +1,15 @@
 from flask import Flask, request, jsonify
 from PokerCalcMain import calculate_deuces, compute_win_percentage
+import pymongo
 
 app = Flask(__name__)
+
+mongo_client = pymongo.MongoClient(host="",
+                               port=27017,
+                               username="",
+                               password="",
+                               authSource="",
+                               authMechanism="")
 
 @app.route("/")
 def landing():
@@ -30,6 +38,16 @@ def hello():
     return jsonify(
         response
     )
+
+@app.route("/api/v1/gs")
+def gearscore():
+    item_id = request.args.get('itemId')
+    response = query_item(item_id)
+
+    return jsonify(
+        response
+    )
+
 
 
 def split_board(board_args):
@@ -77,6 +95,35 @@ def split_hand(hand_args):
     hand.append(card_2)
 
     return hand
+
+
+def query_item(item_id):
+    mongo_db = mongo_client['warmane']
+    mongo_coll = mongo_db['items']
+
+    try:
+        query = {
+            "itemID": int(item_id)
+        }
+    except Exception:
+        return {
+            "Error": "Invalid itemId"
+        }
+
+    result = mongo_coll.find_one(query)
+
+    if result:
+        response = {
+            'itemId': result['itemID'],
+            'itemName': result['name'],
+            'gearScore': result['GearScore']
+        }
+    else:
+        response = {
+            "Error": "Invalid itemId."
+        }
+
+    return response
 
 
 if __name__ == '__main__':
