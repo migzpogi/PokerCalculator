@@ -37,7 +37,7 @@ Now you have a Deuces score and a winning percentage. Making a move will be much
 ### Console Application
 Running the console application will display your winning percentage in the terminal.
 ```
-python PokerCalculatorMain.py --board As Tc 3d --hand Ah Ad
+python PokerCalcMain.py --board As Tc 3d --hand Ah Ad
 (1646, 'Three of a Kind')
 0.964
 ```
